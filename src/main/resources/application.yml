@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: user-service
+
+server:
+  port: 8082
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: https://api-eureka.herokuapp.com/eureka
+  instance:
+    hostname: localhost
